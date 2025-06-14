@@ -1,4 +1,4 @@
-#  - React Product Catalog
+# MyShop  - React Product Catalog
 
 A stylish, responsive product catalog built with **React.js** and **Bootstrap**, powered by the [FakeStore API](https://fakestoreapi.com). This app offers product search, sorting, category filtering, favorites, and a clean, responsive layout.
 
