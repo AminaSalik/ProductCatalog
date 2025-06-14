@@ -1,0 +1,173 @@
+:root {
+  --main-red: rgb(255, 54, 69);
+  --btn-red: red;
+  --btn-outline-color: rgba(252, 144, 153);
+  --btn-outline-border: rgb(250, 121, 132);
+  --input-border-focus: #817f7f;
+  --search-bg: #e6eaea;
+  --btn-border-gray: #cdc7c7;
+  --shadow-sm: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+:root {
+  --main-font: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: var(--main-font);
+}
+
+/* ========== NAVBAR ========== */
+.custom-navbar {
+  background-color: var(--main-red);
+}
+
+.shadow-sm {
+  box-shadow: var(--shadow-sm) !important;
+}
+
+/* ========== SEARCH BAR ========== */
+.product-search-form {
+  max-width: 600px;
+  min-width: 250px;
+}
+.form-control-lg {
+  font-size: 17px;
+}
+.product-search-input {
+  border-radius: 0;
+  border-right: none;
+  box-shadow: none;
+}
+.btn-line:hover {
+  color: red;
+  background-color: red;
+  border-color: red;
+}
+
+.product-search-btn {
+  border-radius: 0 !important;
+  border-left: none !important;
+  box-shadow: none !important;
+  background: var(--btn-red) !;
+  border-color: var(--btn-red) !important;
+}
+
+.product-search-btn:hover {
+  background-color: var(--btn-red) !important;
+  border-color: var(--btn-red) !important;
+  color: white !important;
+}
+
+.product-search-btn:hover .bi-search::before {
+  color: white !important;
+}
+
+
+.product-search-btn {
+  border-radius: 0;
+  border-left: none;
+  box-shadow: none;
+  background: var(--btn-red);
+  border-color: var(--btn-red);
+}
+
+.shop-search input {
+  border-radius: 0;
+}
+
+.shop-search button {
+  border-radius: 0 20px 20px 0;
+  border-color: var(--btn-border-gray);
+  white-space: nowrap;
+}
+
+.shop-search select {
+  background-color: var(--search-bg);
+  border-right: none;
+  border-radius: 20px 0 0 20px;
+}
+
+.shop-search input:focus,
+.shop-search select:focus,
+.shop-search button:focus,
+.form-select-sm:focus,
+.form-control:focus {
+  box-shadow: none !important;
+  outline: none !important;
+  border-color: var(--input-border-focus);
+}
+
+/* ========== DROPDOWNS ========== */
+.sort-dropdown,
+.category-dropdown {
+  min-width: 150px;
+}
+
+.form-select-sm {
+  height: 41px;
+}
+
+.form-select-sm.rounded-start {
+  min-width: 120px;
+}
+
+.auto-width-select {
+  width: auto;
+  min-width: 80px;
+  max-width: 130px;
+}
+
+/* ========== PRODUCT CARDS ========== */
+.product-card {
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.03);
+}
+
+.product-image {
+  height: 230px;
+  object-fit: contain;
+}
+
+.product-list-container {
+  max-width: 1140px;
+}
+
+/* ========== BUTTONS ========== */
+.btn-outline-danger {
+  --bs-btn-color: var(--btn-outline-color) !important;
+  --bs-btn-border-color: var(--btn-outline-border);
+}
+
+/* ========== MISC ========== */
+.text-shop {
+  color: #000000;
+}
+
+.bi {
+  font-size: 1.2rem;
+  color: black;
+}
+
+.bi-search::before {
+  color: white;
+}
+
+/* ========== Pagination ========== */
+.btn-outline-dark:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.btn-outline{
+  border-color: red;
+}
+
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 767.98px) {
+  .hide-on-mobile {
+    display: none !important;
+  }
+}
